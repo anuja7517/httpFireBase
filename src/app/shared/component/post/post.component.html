@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-md-5">
+        <div class="card">
+            <div class="card-header">
+                {{postObj.title}}
+            </div>
+            <div class="card-body">
+                {{postObj.body}}
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+            <button class="btn btn-primary" routerLink="edit">Edit</button>
+            <button class="btn btn-danger" (click)="onpostDelete()">Delete</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-7">
+        <img [src]="'https://source.unsplash.com/random/?'+getcatg" alt="" class="img-fluid">
+    </div>
+</div>

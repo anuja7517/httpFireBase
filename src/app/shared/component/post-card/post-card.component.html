@@ -1,0 +1,15 @@
+<div class="card">
+    <div class="card-header text-center" >
+        <h4 class="m-0">
+            {{postobj.title}}
+        </h4>
+    </div>
+    <div class="card-body"class="card-info">
+        <p class="card-info2">
+             {{postobj.body}}
+        </p>
+    </div>
+    <div class="card-footer"></div>
+    <div class="button btn btn-outline-info btn-block"
+    [routerLink]="['/post',postobj.id]">Viwe More</div>
+</div>
